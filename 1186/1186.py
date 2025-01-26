@@ -5,6 +5,8 @@ class Solution:
         # TC: O(N^3)
         # Optimal: Kadane (Yes but not enough)
         # Tried to divide this problem into 2 smaller problem
+        # So when we delete an element, we will have to account for the maxSum before that element and maxSum after that element
+        # So we will populate maxEndHere and maxStartHere
         '''
         1 0 -2 -4 9 5 -3 10 -17
         '''
