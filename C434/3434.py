@@ -1,5 +1,14 @@
 class Solution:
+    # Brute force + Kadane Algo
+    # I was so dumb about this
+    # Should have read the requirements more thorough
+    # They want to find max occur of k after adding some value to a subarray inside nums
+    # So there's only 50 possible value for an element in nums
+    # We can go brute force every value and find the maximum occur of its + the frequency of k inside an array
+    # If we meet k, just -1 into the current var we are keeping track of the occur since there is no use of k, we only
+    # want to find the max frequency of other element which we are currently looking at
     def maxFrequency(self, nums: List[int], k: int) -> int:
+
         '''
         10,2,3,4,5,5,4,3,2,2
         10,8,8,8,8,8,8,10
