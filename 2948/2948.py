@@ -12,4 +12,5 @@ class Solution:
         for i in nums:
             idx = mp[i] # index of group
             res.append(grps[idx].popleft())
+        
         return res
